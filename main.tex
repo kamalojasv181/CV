@@ -1,5 +1,5 @@
 
-% !TEX program = pdflatex
+% !TEX program = xelatex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Medium Length Professional CV
 % LaTeX Template
@@ -23,9 +23,8 @@
 
 %----------------------------------------------------------------------------------------
 
-\documentclass{resume} % Use the custom resume.cls style
-
-\usepackage[left=0.45in,top=0.5in,right=0.45in,bottom=0.5in]{geometry} % Document margins
+\documentclass[40]{resume} % Use the custom resume.cls style
+\usepackage[left=0.30in,top=0.5in,right=0.30in,bottom=0.5in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
@@ -38,14 +37,10 @@
 % [
 \usepackage{etaremune} % reverse enumeration
 % ]
-
+\usepackage{enumitem}
 \usepackage[parfill]{parskip}
 \setlength{\parskip}{1.5pt} % line spacing for new lines
-
 % \setlength{\parindent}{} % paragraph indentation
-
-
-
 \name{Ojasv Kamal} % Your name
 % \address{The University of Hong Kong, China}
 \address{
@@ -58,21 +53,19 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
-
 \begin{rSection}{Education}
 \vspace{0.3cm}
 
 {\bf Indian Institute of Technology Kharagpur } \hfill { Kharagpur, India} 
-\\ B.Tech M.Tech Dual Degree, Mechanical Engineering; CGPA: 8.85/10 \hfill { \em  July 2018 – Present}
-\vspace{0.1cm}
+\\ B.Tech M.Tech Dual Degree, Mechanical Engineering; CGPA: 8.85/10 \hfill { \em  2018 – Present}
+\vspace{0.2cm}
 \\
 {\bf Sukriti World School } \hfill { New Delhi, India} 
-\\ All India Senior School Certificate Examination (AISSCE); Percentage: 92.8/100 \hfill { \em  2017 – 2018}
-\vspace{0.1cm}
+\\ All India Senior School Certificate Examination (AISSCE); Percentage: 92.8/100 \hfill { \em  2017 - 2018}
+\vspace{0.2cm}
 \\
 {\bf Scholars Rosary Senior Secondary School } \hfill { Rohtak, India} 
-\\ All India Secondary School Examination (AISSE); CGPA: 10/10 \hfill { \em  2015 – 2016}
+\\ All India Secondary School Examination (AISSE); CGPA: 10/10 \hfill { \em  2015 - 2016}
 
 \end{rSection}
 
@@ -81,23 +74,27 @@
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Publications} \itemsep -2pt
-    \begin{etaremune}[start  = 3] % Update when you add a publication
+\begin{rSection}{Publications}
+    \vspace{0.3cm}
+    \begin{itemize}[leftmargin=0.15in]
+      % \setlength{\itemindent}{-1em}
        \item \textbf{When to Make Exceptions: Exploring Language Models as Accounts of Human Moral Judgment
        }
-       
        Zhijing Jin, Sydney Levine, Fernando Gonzalez, \textbf{Ojasv Kamal}, Maarten Sap, Mrinmaya Sachan, Rada Mihalcea, Josh Tenenbaum, Bernhard Schölkopf.
        
-        \emph{In Proceedings of the Advances in Neural Information Processing Systems 35} (NeurIPS 2022). \\Available at 
-        \url{https://arxiv.org/abs/2210.01478}.
+        \emph{In Proceedings of the Advances in Neural Information Processing Systems 35} (NeurIPS 2022) \\Available at 
+        \url{https://arxiv.org/abs/2210.01478}
+
+      \vspace{4pt}
     
-       \item \textbf{Adversities are all you need: Classification of self-reported breast cancer posts on Twitter using Adversarial Fine-tuning.}
+       \item \textbf{Adversities are all you need: Classification of self-reported breast cancer posts on Twitter using Adversarial Fine-tuning}
        
-       Adarsh Kumar$^*$, \textbf{Ojasv Kamal$^*$}, Susmita Mazumdar$^*$ (Equal Contribution). 
+       Adarsh Kumar$^*$, \textbf{Ojasv Kamal$^*$}, Susmita Mazumdar$^*$ (Equal Contribution)
        
-       \emph{In Proceedings of the Sixth Social Media Mining for Health (SMM4H) Workshop and Shared Task NAACL 2021}. Available at \url{https://aclanthology.org/2021.smm4h-1.22/}.
-       
-       \item \textbf{Hostility detection in Hindi leveraging pre-trained language models.}
+       \emph{In Proceedings of the Sixth Social Media Mining for Health (SMM4H) Workshop and Shared Task NAACL 2021}. Available at \url{https://aclanthology.org/2021.smm4h-1.22/}
+       \vspace{4pt}
+
+       \item \textbf{Hostility Detection in Hindi leveraging Pre-Trained Language Models}
        
        \textbf{Ojasv Kamal$^*$}, Adarsh Kumar$^*$ (equal contribution), Tejas Vaidhya. 
        
@@ -105,23 +102,76 @@
        
 
       
-    \end{etaremune}
+    \end{itemize}
 
     
     \end{rSection}
 
 \begin{rSection}{Research Experience}
-
-{\bf Analysing Meta-Contrastive Learning for Few-Shot Slot Filling} \hfill { } 
+  \vspace{0.3cm}
+  {\bf Causal Relation Extraction from Human Conversations} \hfill {\em Jul 2022 - Present} 
+\\ \textit{ETH Zürich, Language, Reasoning and Education Lab
+, with Prof. Mrinmaya Sachan} \hfill { \em }
+\begin{itemize}
+\item Surveyed \textbf{30} datasets containing natural language text with labeled cause-effect span pairs.
+\item Quantified the ability of BERT model to extract cause-effect spans in a supervised setting.
+\item Compared this performance to zero-shot performance of GPT-3 by tuning over \textbf{250} prompts
+\end{itemize}
+\vspace{0.2cm}
+{\bf Analysing Meta-Contrastive Learning for Few-Shot Slot Filling} \hfill {\em Dec 2021 - Present} 
 \\ \textit{NUS, Web Information Retrieval / Natural Language Processing Group, with Prof. Min-Yen Kan} \hfill { \em }
 \begin{itemize}
-\item Interpreted the complex process of meta-learning by studying the two levels of base and meta learning separately.
-\item Quantified the effect of using contrastive learning as the base learning algorithm for few-shot slot filling.
-\item Performed 42 abilation tests on 7 dataset domains to study the effect of removing each domain.
-\item Correlated the performance drop with 19 out-of-domain metrics representing text properties to interpret the role of contrastive learning in meta learning.
+\item Interpreted the complex process of \textbf{meta-learning} by studying the two levels of base and meta-learning separately
+\item Quantified the effect of using contrastive learning as the base learning algorithm for few-shot slot filling
+\item Performed \textbf{42} ablation tests on \textbf{7} dataset domains to study the effect of removing each domain
+\item Correlated the performance drop with \textbf{19} out-of-domain metrics representing text properties to interpret the role of contrastive learning in meta learning
+\item Working on completing the post-result analysis to publish in a peer-reviewed conference
+\end{itemize}
+
+\vspace{0.2cm}
+{\bf Conversational Recommender System Toolkit} \hfill {\em Jul 2022 - Nov 2022} 
+\\ \textit{NUS, Web Information Retrieval / Natural Language Processing Group, with Prof. Min-Yen Kan} \hfill { \em }
+\begin{itemize}
+\item Built a user preference estimation module using factorization
+machine to understand user preferences
+\item Added a recommendation module to accomplish recommendations in a short number of turns using reinforcement learning
+\item Created an end-to-end pipeline to incorporate the possibility of noise and uncertainty in language understanding
+\end{itemize}
+
+\vspace{0.2 cm}
+
+{\bf When to Make Exceptions: Exploring Language Models as Accounts of Human Moral Judgment} \hfill { } 
+\\ \textit{ETH Zürich, Language, Reasoning and Education Lab
+, with Prof. Mrinmaya Sachan} \hfill {\em Mar 2022 - May 2022 }
+\begin{itemize}
+\item Investigated the potential of LLMs like GPT-3 and Delphi to reason in various moral scenarios by analyzing with \textbf{50} custom prompts
+\item Scraped average prices of \textbf{220} services from \href{https://www.fiverr.com/?utm_source=306294&utm_medium=cx_affiliate&utm_campaign=&afp=63975b6bf036a80340a5ecd1&cxd_token=306294_17458287_|afp0:63975b6bf036a80340a5ecd1|afp1:1660_&show_join=true}{Fiver} to estimate these models' understanding of their value
+\item Research was acclaimed as an oral presentation at Neural Information Processing System \textbf{(NeurIPS) 2022}
+\end{itemize}
+\pagebreak
+
+
+{\bf Causal and Anticausal Prompting} \hfill {\em Mar 2022 - Jun 2022 } 
+\\ \textit{ETH Zürich, Language, Reasoning and Education Lab
+, with Prof. Mrinmaya Sachan} \hfill { \em }
+\begin{itemize}
+\item Designed causal and anticausal prompts using customer reviews from the Yelp dataset
+\item Predicted customer ratings through these prompts using language models like RoBERTa and GPT-2
+\item Employed \textbf{adversarial attack} on the model to establish superior robustness of causal prompts
 \end{itemize}
 
 
+\vspace{0.2cm}
+{\bf Improving Automatic Speech Recognition (ASR) on Out-of-Vocabulary words} \hfill { \em May 2022 - Jul 2022} 
+\\ \textit{Sprinklr, Machine Learning Team} \hfill { \em }
+\begin{itemize}
+\item Incorporated domain-specific data into the encoder and decoder of Sprinklr's ASR system.
+\item Improved the decoder by combining the probabilities of the ASR model with a language model built using a domain-specific corpus.
+\item Supplied the encoder with information from related ASR datasets using \textbf{continual learning}.
+\item Reduced the word error rate by \textbf{118\%} using the language model and further by \textbf{42\%} using continual learning.
+\item Implemented language model pruning to reduce memory utilization by \textbf{91\%} and latency by \textbf{31\%}
+\end{itemize}
+\vspace{2pt}
 \end{rSection}
 
 
@@ -129,35 +179,46 @@
 %	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Work Experience}
-{\bf Amazon AI,} \textit{Research Intern} \hfill {July 2019 - present}
+\begin{rSection}{Research Projects}
+\vspace{6pt}
 
-{\bf MIT Media Lab,} \textit{Undergraduate Researcher} \hfill {Sept 2017 - Feb 2018}
+{\bf Adversities are all you need: Classification of self-reported breast cancer posts on Twitter using Adversarial Fine-tuning} \hfill{ } 
 
-{\bf Shanghai Jiao Tong University,} \textit{Undergraduate Researcher} \hfill {July 2017 - Aug 2017}
+\begin{itemize}
+\item Classified \textbf{5000} tweets as positive/negative cases of self-report of breast cancer.
+\item Enhanced the robustness towards adversarial examples by introducing a \textbf{gradient-based perturbation}.
+\item Improved the average micro F1 score by \textbf{5\%} across various pre-trained language models.
+\item Sixth Social Media Mining for Health (\textbf{SMM4H}) Workshop and Shared Task collocated with NAACL 2021
+\end{itemize}
+\vspace{0.2cm}
+{\bf Hostility Detection in Hindi leveraging Pre-Trained Language Models
+} \hfill { } 
 
-{\bf Vega Global Japan,} \textit{Assistant to Country Manager} \hfill {Jan 2017 - Feb 2017}
+\begin{itemize}
+\item Designed an auxiliary model approach to detect hostility occurrence and type of hostility in Hindi tweets
+\item Improved the micro F1 score by \textbf{13\%} over the baseline using the above approach
+\item Paper accepted at the International Workshop on Combating Online Hostile Posts in Regional Languages during Emergency Situation (\textbf{CONSTRAINT}), collocated with AAAI 2021
+\end{itemize}
 
-% \begin{itemize}
-  
-%   \item Launched and maintained the company intranet using Apache and WordPress
-%   \item Designed and implemented a data pipeline between Google API and Pipeliner CRM API
-% \end{itemize}
-
-{\bf Eastern International Academy,} \textit{International Teacher} \hfill {July 2016 - Aug 2016}
+\vspace{0.2cm}
+{\bf Unsupervised Domain Adaptation} \hfill { } 
+\\ \textit{IIT Kharagpur, Swarm Robotics Lab, with Prof. Somesh Kumar} \hfill { \em }
+\begin{itemize}
+\item Identified and studied the problem of covariate shift in the semantic segmentation of robots in the lab
+\item Imparted domain invariant features from source to the target domain using shared parameters of ``Coupled Generative Adversarial Network."
+\item Optimised the number of parameters in the network by implementing the paper ``Unsupervised Domain Adaptation by Backpropagation."
+\end{itemize}
 \end{rSection}
 
-\begin{rSection}{Awards \& Honors} \itemsep -2pt
-\begin{enumerate}
-  \item \textbf{First Class Honours}, The University of Hong Kong, 2019.
-  \item \textbf{HKU Foundation Entrance Scholarship}, The University of Hong Kong, 2015 - 2019.
-  \\Top 3 among 19,000 students in the National College Examination in Shanghai, China. \\Covered 4 years of tuition fees for undergraduate study.
-  \item \textbf{Hong Kong Government Scholarship Fund}, Hong Kong, 2017 - 2019.
-  \item \textbf{Hong Kong, China - Asia-Pacific Economic Cooperation Scholarship}, Hong Kong, 2018 - 2019.
-  \item \textbf{Rosita King Ho Scholarship} for Academic Excellence in \textbf{Exchange to National Taiwan University} (GPA: 3.86/4.3), Taiwan, 2017.
-  \item \textbf{Hong Kong Government Reach-Out Award} for Volunteer Work in Phnom Penh, Cambodia, 2016.
-  \item \textbf{Dean's List}, The University of Hong Kong, 2015, 2016.
-\end{enumerate}
+\begin{rSection}{Awards \& Achievement}
+\vspace{0.2cm}
+\begin{itemize}
+  \setlength{\itemindent}{-1em}
+  \item \textbf{Joint Entrance Exam Advanced:} Secured an All India Rank of 2135 (top \textbf{1} percentile) in the examination
+  \item \textbf{Joint Entrance Exam Main:} Bagged an All India Rank of 3621 (top \textbf{0.3} percentile) in the examination
+  \item \textbf{Kishore Vaigyanik Protsahan Yojana 2018:} Achieved an All India Rank of 1487 (top \textbf{3} percentile)
+  \item \textbf{Table Tennis:} Accomplished \textbf{1$^{st}$} position in Table Tennis state championship (under-12 category) and managed a peak national rank of \textbf{36} in 2011
+\end{itemize}
 
 \end{rSection}
 
@@ -166,75 +227,30 @@
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Invited Talks}
-
-
-{\bf Mar 11, 2020.  ``Language Adversarial Attack against BERT.''} \href{https://lit.eecs.umich.edu/}{Invited Talk at University of Michigan Language and Information Technologies Lab}, United States. 
-
-{\bf Mar 2, 2020. ``The Power of Unsupervised Text Generation -- Taking Adversarial Attack as an Example.''} Invited Talk at \href{https://is.mpg.de/}{Max Planck Institute for Intelligent Systems}, Germany. 
-
-{\bf Feb 12, 2020. ``New Advances in NLP Adversarial Attack.''}  Invited Talk by \href{https://syncedreview.com/}{\emph SyncedTech}, one of the top media on Artificial Intelligence. The talk hit a record high of 3,697 listeners.
-
-\end{rSection}
-
-
-\begin{rSection}{Professional Service}
-
-\textbf{Reviewer}, the 2020 Annual Conference of the Association for Computational Linguistics. ACL 2020. 
-
-
-\end{rSection}
-
-\begin{rSection}{Advising \& Mentoring}
-\textbf{Master Students}
+\begin{rSection}{Mentorships \& Volunteer Activity}
+\vspace{0.3cm}
 \begin{itemize}
-    \item Xiaoyu Xing, 2020. Master in Computer Science at Fudan University.
-\end{itemize}
-
-
-\textbf{Undergraduate Students}
-
-\begin{itemize}
-    \item Yongyi Yang, 2019-2020. Undergraduate in Computer Science at Fudan University.
-    \item Yuchun Dai, 2020. Undergraduate in Computer Science at Fudan University.
-\end{itemize}
+  \setlength{\itemindent}{-1em}
+  \item \textbf{Research Team Mentor:} Mentored a group of four junior researchers in the software team at Swarm Robotics lab, IIT Kharagpur. Two of them are leading the team now.
+  \item \textbf{Open Source Contribution:} Contributed various differential equation solvers in the form of \textbf{3111} lines of code to the OrdinaryDiffEq.jl package of Julia's scientific computing library SciML.
+  \item \textbf{Teaching Assistant:} Assisted fourth-year undergraduate students in tutorial problems for the course "Systems and Controls"
+  \item \textbf{Social Work Volunteer:} Volunteered in organizing a food donation and a dental checkup camp for Rotary Club, Rohtak.
+\end{itemize} 
 
 
 \end{rSection}
 
-\begin{rSection}{Selected Press}
 
-\textit{``Hey Alexa, sorry I fooled you.''} MIT News, 2020. http://news.mit.edu/2020/hey-alexa-sorry-i-fooled-you-0207.
-
-\textit{``TextFooler Generates Adversarial Text to Strengthen Natural Language Models.''} ACM TechNews, 2020. https://technews.acm.org/archives.cfm?fo=2020-02-feb/feb-07-2020.html
-
-\end{rSection}
-
-
-\begin{rSection}{Community Contribution} \itemsep -2pt
-\begin{enumerate}
-    \item \textbf{Member of Effective Altruism} in Shanghai, China, 2019 - present.
-  \item \textbf{Volunteer Kids' Church Organizer} at Cambridge Community Fellowship Church, MA, US, 2018.
-  
-  \item \textbf{Volunteer Teacher} in Phnom Penh, Cambodia, 2016.
-  \\ Rewarded \textit{Hong Kong Government Reach-Out Award 2016}.
-  
-  \item \textbf{Volunteer Kids' Church Helper} at Saint Peter's Church, Shanghai, China, 2015.
-  \item \textbf{Volunteer Teacher} at Three-Leaf Clover Kindergarten for Autistic Children, Shanghai, China, 2014.
-  
-  
-\end{enumerate}
-
-\end{rSection}
-
-\begin{rSection}{Skills}
-
+\begin{rSection}{Skills and Coursework}
+\vspace{0.2cm}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages &  English, Mandarin, German, Japanese, Cantonese, Shanghainese, Classical Chinese  \\
-Programming Skills &  Python, Javascript, NodeJS, PHP, CSS, HTML, Excel VBA, Java, C/C++, MySQL \\
+Languages &  English, Hindi, French, Sanskrit  \\
+Programming Skills &  Python, C/C++, Julia, Javascript, MATLAB \\
 Design Skills & Photoshop, Unity, WordPress, Prezi,
 Microsoft Suite (Word, Excel, Powerpoint) \\
 Technologies & Pytorch, TensorFlow, Keras \\
+University Level Courses & Natural Language Processing, Probability and Statistics, Calculus, Linear Algebra\\
+MOOCs & Machine Learning, Deep Learning, Reinforcement Learning, Computer Vision, \\ & Multitask and Meta Learning
 % Interests  & Biking, Hiking, Yoga, Meditation, Archaeology and History \\
 
 \end{tabular}
